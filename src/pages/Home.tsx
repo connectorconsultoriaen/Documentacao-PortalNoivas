@@ -50,7 +50,7 @@ export function Home () {
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Banner.png</summary>
                 <p className='pl-4'>
-                  Arquivo de imagem utilizado no como banner na página principal do portal noivas.
+                  Arquivo de imagem utilizado como banner na página principal do portal noivas.
                 </p>
               </details>
 
@@ -71,20 +71,34 @@ export function Home () {
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Manifest.json</summary>
                 <p className='pl-4'>
-                  Arquivo Json...
+                  O manifesto da aplicação web fornece informação sobre uma aplicação (como nome, autor, ícone, e 
+                  descrição) num arquivo de texto JSON. O objetivo do manifest.json é instalar aplicações web na tela 
+                  inicial de um dispositivo, proporcionando aos utilizadores um acesso mais rápido e uma experiência 
+                  mais rica.
                 </p>
               </details>
 
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Roboto.txt</summary>
-                <p className='pl-4'>
-                </p>
+
+                <section className='pl-4'>
+                  <p>
+                    É usado para instruir os robôs/spiders utilizados pelos mecanismos de buscas (como Google e Bing)
+                    a como rastrear e indexar as páginas de seu site.
+                  </p>
+                  <a 
+                    className="text-blue-600"
+                    href="https://handson-ti.com.br/para-que-serve-o-robots-txt/#:~:text=txt%3F-,Robot.,as%20p%C3%A1ginas%20de%20seu%20site."
+                  >
+                    Fonte original para saber mais
+                  </a>
+                </section>
               </details>
 
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Banner2.jfif</summary>
                 <p className='pl-4'>
-                  Arquivo...
+                Arquivo de imagem utilizado como outra versão de banner nas páginas secundárias do portal noivas.
                 </p>
               </details>
             </section>
