@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import Header from '../components/Header';
 
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export function PastaSRC () {
 
@@ -23,9 +24,6 @@ export function PastaSRC () {
         
         <div className='pt-7'>
           
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum debitis impedit, doloribus iure, eligendi ea aliquid doloremque ipsum odio eum quaerat deserunt, fugit reprehenderit ad provident! Autem impedit fugit facere.
-          </p>
 
           <details className='mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip'> 
             <summary className='font-bold cursor-pointer'>Pasta Public</summary>
@@ -99,7 +97,7 @@ export function PastaSRC () {
         </div>
       </section>
 
-      <footer className='w-full h-20 py-3 flex items-center justify-center text-white font-semibold bg-gold mt-40'>© 2023 Todos os direitos reservados</footer>
+      <Footer />
     </div>
   )
 }

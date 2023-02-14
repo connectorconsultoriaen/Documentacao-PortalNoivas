@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 import Header from '../components/Header';
-
+import Footer from '../components/Footer';
 
 export function Home () {
 
@@ -14,6 +14,7 @@ export function Home () {
   return (
     <div className="w-screen h-full flex flex-col items-center font-Poppins">
       <Header />
+
       <section 
         className='px-4 md:px-16 py-4 mt-6 w-3/5 min-h-[400px] h-full flex flex-col items-center shadow-xl shadow-goldDark border-t-4 border-gold'
       >
@@ -24,8 +25,8 @@ export function Home () {
         <div className='pt-7'>
           
           <p>
-            Site criado para documentação do Projeto Portal Noivas. Aqui você encontrará a descrição de todos os arquivos e pastas 
-            do projeto.  
+            Site criado para documentação do Projeto Portal Noivas. Aqui você encontrará a descrição de 
+            todos os arquivos e pastas do projeto.  
           </p>
 
           <details 
@@ -162,6 +163,8 @@ export function Home () {
 
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }
