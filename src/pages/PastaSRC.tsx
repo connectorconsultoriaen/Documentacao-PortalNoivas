@@ -12,8 +12,6 @@ export function PastaSRC () {
   }
 
   return (
-    <div className="w-screen h-full flex flex-col items-center font-Poppins">
-      <Header />
 
       <section 
         className='
@@ -229,7 +227,5 @@ export function PastaSRC () {
         </div>
       </section>
 
-      <Footer />
-    </div>
   )
 }

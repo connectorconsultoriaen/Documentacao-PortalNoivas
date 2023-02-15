@@ -1,19 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-
 export function Home () {
 
   const navigate = useNavigate();
 
-  const goToPastaSRC = () => {
-    navigate('/PastaSRC');
-  }
 
   return (
-    <div className="w-screen h-full flex flex-col items-center font-Poppins">
-      <Header />
 
       <section 
         className='px-4 md:px-16 py-4 mt-6 w-3/5 min-h-[400px] h-full flex flex-col items-center shadow-xl shadow-goldDark border-t-4 border-gold'
@@ -115,7 +107,7 @@ export function Home () {
                 Aqui temos todos os arquivos que desenvolvemos como componentes, páginas da aplicação, hooks, 
                 rotas dentre outros. Por ser muito conteúdo clique no link abaixo para mais informações.
               </p>
-              <button className="text-blue-500 hover:font-bold" onClick={goToPastaSRC}>Clique aqui!</button> 
+              <button className="text-blue-500 hover:font-bold" onClick={() => navigate('/PastaSRC')}>Clique aqui!</button> 
             </section>
  
           </details>
@@ -178,7 +170,5 @@ export function Home () {
         </div>
       </section>
 
-      <Footer />
-    </div>
   )
 }
