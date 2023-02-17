@@ -1,8 +1,4 @@
-import { useNavigate } from 'react-router-dom';
-
 export function PastaComponents () {
-
-  const navigate = useNavigate();
 
   return (
 

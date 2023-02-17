@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 export default function Base () {
   return (
-    <div className="w-screen h-full flex flex-col items-center font-Poppins">
+    <div className="w-full h-full flex flex-col items-center font-Poppins">
       <Header />
 
         <Outlet />
