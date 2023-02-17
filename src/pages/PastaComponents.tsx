@@ -1,12 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 
-export function PastaSRC () {
+export function PastaComponents () {
 
   const navigate = useNavigate();
-
-  const navigatingTo = () => {
-    navigate('/PastaComponents');
-  }
 
   return (
 
@@ -21,14 +17,14 @@ export function PastaSRC () {
         
         <div className='py-7 w-full'>
 
-          <p>Todos as pastas e arquivos listados abaixo estão dentro da pasta SRC</p>
+          <p>Todos as pastas e arquivos listados abaixo estão dentro da pasta Components.</p>
 
           <details 
             className='
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
             '
           > 
-            <summary className='font-bold cursor-pointer'>Pasta Apis</summary>
+            <summary className='font-bold cursor-pointer'>Pasta Admin</summary>
             <section className='pl-4'>
               <p>
                 Nesta pasta temos a conexão com o back-end, junto com simulações de respostas do servidor para testes.
@@ -57,23 +53,7 @@ export function PastaSRC () {
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
             '
           > 
-            <summary className='font-bold cursor-pointer'>Pasta Components</summary>
-            <section className='pl-4'>
-              <p>
-                Esta é a pasta que armazena todos os componentes da nossa aplicação. Por ser muito conteúdo clique 
-                no link abaixo para mais informações.
-              </p>
-              <button className="text-blue-500 hover:font-bold" onClick={navigatingTo}>Clique aqui!</button> 
-            </section>
- 
-          </details>
-
-          <details 
-            className='
-              mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
-            '
-          > 
-            <summary className='font-bold cursor-pointer'>Pasta Hooks</summary>
+            <summary className='font-bold cursor-pointer'>Pasta Form</summary>
             <section className='pl-4'>
               <p>
                 Nesta pasta temos hooks personalizados criados, a partir de hooks já existentes, expecificamente para 
@@ -109,15 +89,13 @@ export function PastaSRC () {
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
             '
           > 
-            <summary className='font-bold cursor-pointer'>Pasta Pages</summary>
+            <summary className='font-bold cursor-pointer'>AnuncioCard</summary>
             <section className='pl-4'>
               <p>
-                Esta é a pasta que armazena todas as páginas da nossa aplicação. Por ser muito conteúdo clique 
-                no link abaixo para mais informações.
+              Um componente que cria um anúncio na aplicação. Esse anúncio é criado por um terceiro que tem interrese 
+              de anunciar o seu negócio no site Portal Noiva.
               </p>
-              <button className="text-blue-500 hover:font-bold" onClick={navigatingTo}>Clique aqui!</button> 
             </section>
- 
           </details>
 
           <details 
@@ -125,104 +103,145 @@ export function PastaSRC () {
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
             '
           > 
-            <summary className='font-bold cursor-pointer'>Pasta Routes</summary>
+            <summary className='font-bold cursor-pointer'>ArticleCard</summary>
             <section className='pl-4'>
-
-              <details className='pt-2'>
-                <summary className='font-bold cursor-pointer'>history.js</summary>
-                <p className='pl-4'>
-                  Arquivo que nos permite ter um historico que possamos utilizar e manipular ao longo da nossa aplicação.
-                </p>
-              </details>
-
-              <details className='pt-2'>
-                <summary className='font-bold cursor-pointer'>routes.js</summary>
-                <p className='pl-4'>
-                  Arquivo no qual configuramos todas as rotas(caminhos) da nossa aplicação utilizando a biblioteca do React Router DOM. 
-                  Para alterar as informações contidas aqui é importante ter o conhecimento intermediario da biblioteca utilizada.
-                </p>
-              </details>
+              <p>
+                Um componente que cria um artigo dentro da aplicação. Esse artigo criado possui a data de publicação e 
+                controla o número de visualizações.
+              </p>
             </section>
           </details>
 
-
           <details 
             className='
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
             '
           > 
-            <summary className='font-bold cursor-pointer'>Pasta Store</summary>
+            <summary className='font-bold cursor-pointer'>BannerCard</summary>
             <section className='pl-4'>
               <p>
-                Esta é a pasta que armazena todas interações com a biblioteca Redux. Por ser muito conteúdo clique 
-                no link abaixo para mais informações.
+              Um componente que cria um Banner na aplicação. Esse banner é criado por um terceiro que 
+                tem interrese de anunciar o seu negocio no site Portal Noiva.
               </p>
-              <button className="text-blue-500 hover:font-bold" onClick={navigatingTo}>Clique aqui!</button> 
             </section>
- 
-          </details>
-
+          </details>              
 
           <details 
             className='
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
             '
           > 
-            <summary className='font-bold cursor-pointer'>Pasta Utils</summary>
+            <summary className='font-bold cursor-pointer'>FeaturedCategoryCard</summary>
             <section className='pl-4'>
-
-              <details className='pt-2'>
-                <summary className='font-bold cursor-pointer'>index.js</summary>
-                <p className='pl-4'>
-                  Arquivo javascript...
-                </p>
-              </details>
-
+              <p>
+                Um componente que...
+              </p>
             </section>
           </details>
 
-
           <details 
             className='
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
             '
           > 
-            <summary className='font-bold cursor-pointer'>App.css</summary>
-            <section className='pl-4'>
-              <p>Arquivo de estilização global para toda á aplicação</p>
-            </section>
-          </details>          
-
-
-          <details 
-            className='
-              mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
-            '
-          > 
-            <summary className='font-bold cursor-pointer'>App.jsx</summary>
+            <summary className='font-bold cursor-pointer'>Footer</summary>
             <section className='pl-4'>
               <p>
-                Arquivo principal onde chamamos nossas rotas para gerenciar a aplicação.
+                Um componente que cria o rodapé da aplicação. 
               </p>
             </section>
-          </details>    
+          </details>
 
           <details 
             className='
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
             '
           > 
-            <summary className='font-bold cursor-pointer'>index.js</summary>
+            <summary className='font-bold cursor-pointer'>Masthead</summary>
             <section className='pl-4'>
               <p>
-                Arquivo que faz a conexão do nosso arquivo app.jsx com nosso html. Renderizando nosso conteúdo, 
-                definindo o historico e habilitando os arquivos da nossa pasta Store em toda a aplicação.
+              Este componente cria uma aba de navegação na aplicação para permitir o usuário comum e o usuário logado 
+              a navegaram pelas páginas disponíveis para eles respeitando o nível de acesso que cada um possui.
               </p>
             </section>
-          </details>   
+          </details>
+
+          <details 
+            className='
+              mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
+            '
+          > 
+            <summary className='font-bold cursor-pointer'>Publicidade</summary>
+            <section className='pl-4'>
+              <p>
+                Esse componente lista todos os banners da aplicação que batem com os requisitos de busca, são esses 
+                requisitos: categoria, tipo, local, etc. Chama o componente PublicidadeBanner.jsx para renderizar os
+                banner encontrados.
+              </p>
+            </section>
+          </details>
+
+          <details 
+            className='
+              mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
+            '
+          > 
+            <summary className='font-bold cursor-pointer'>PublicidadeBanner</summary>
+            <section className='pl-4'>
+              <p>
+                Esse componente é responsavel por mostrar na tela os banner encontrados pelo
+                componente Publicidade.jsx.
+              </p>
+            </section>
+          </details>
+
+          <details 
+            className='
+              mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
+            '
+          > 
+            <summary className='font-bold cursor-pointer'>RequireAuth</summary>
+            <section className='pl-4'>
+              <p>
+                Esse componente é responsavel por realizar a autentificação do usuário no site. Permitindo assim que 
+                ele acesse as funcionalidades reservadas a usuários logados.
+                <br />
+                Esse componente é chamado no arquivo routes.js localizado na pasta routes. Para realizar a 
+                autentificação antes de redirecionar o usuário a determinada página.
+              </p>
+            </section>
+          </details>
+
+          <details 
+            className='
+              mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
+            '
+          > 
+            <summary className='font-bold cursor-pointer'>ScrollToTop</summary>
+            <section className='pl-4'>
+              <p>
+               Esse componente é chamado toda vez que mudamos de página(url) no projeto, ele serve para mover a 
+               página para topo, pois isso não acontece automaticamente.
+              </p>
+            </section>
+          </details>
+
+          <details 
+            className='
+              mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
+            '
+          > 
+            <summary className='font-bold cursor-pointer'>SideBarMenu</summary>
+            <section className='pl-4'>
+              <p>
+               Esse componente cria um menu lateral na tela exibindo opções de navegação para o usúario. Além disso 
+               também controla quando este menu abre e fecha na tela.
+              </p>
+            </section>
+          </details>
+
 
         </div>
       </section>
-
   )
 }
