@@ -21,11 +21,35 @@ export default function Header () {
           text-white font-extralight font-Poppins
         "
       >
-        <Link to="/" className="hover:font-normal">Home</Link>
-        <Link to="/PastaSRC" className="hover:font-normal">SRC</Link>
-        <Link to="/PastaComponents" className="hover:font-normal">Components</Link>
-        <Link to="/PastaPages" className="hover:font-normal">Pages</Link>
-        <Link to="/PastaStore" className="hover:font-normal">Store</Link>
+        <Link 
+          to="/" 
+          className="font-normal hover:font-semibold">
+            Home
+        </Link>
+
+        <Link 
+          to="/PastaSRC" 
+          className="font-normal hover:font-semibold">
+            SRC
+        </Link>
+        
+        <Link 
+          to="/PastaComponents" 
+          className="font-normal hover:font-semibold">
+            Components
+        </Link>
+        
+        <Link 
+          to="/PastaPages" 
+          className="font-normal hover:font-semibold">
+            Pages
+        </Link>
+        
+        <Link 
+          to="/PastaStore" 
+          className="font-normal hover:font-semibold">
+            Store
+        </Link>
       </div>
     </header>
   )

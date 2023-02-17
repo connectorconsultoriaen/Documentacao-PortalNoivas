@@ -1,9 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export function Home () {
-
-  const navigate = useNavigate();
-
 
   return (
 
@@ -107,7 +104,7 @@ export function Home () {
                 Aqui temos todos os arquivos que desenvolvemos como componentes, páginas da aplicação, hooks, 
                 rotas dentre outros. Por ser muito conteúdo clique no link abaixo para mais informações.
               </p>
-              <button className="text-blue-500 hover:font-bold" onClick={() => navigate('/PastaSRC')}>Clique aqui!</button> 
+              <Link to="/PastaSRC" className="text-blue-500 hover:font-bold">Clique aqui!</Link>
             </section>
  
           </details>

@@ -1,15 +1,8 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export function PastaSRC () {
-
-  const navigate = useNavigate();
-
-  const navigatingTo = () => {
-    navigate('/PastaComponents');
-  }
-
   return (
-
+    
       <section 
         className='
           px-4 md:px-16 py-4 mt-6 w-3/5 min-h-[400px] h-full flex flex-col items-center shadow-xl shadow-goldDark border-t-4 border-gold
@@ -62,8 +55,14 @@ export function PastaSRC () {
               <p>
                 Esta é a pasta que armazena todos os componentes da nossa aplicação. Por ser muito conteúdo clique 
                 no link abaixo para mais informações.
-              </p>
-              <button className="text-blue-500 hover:font-bold" onClick={navigatingTo}>Clique aqui!</button> 
+              </p>  
+
+              <Link 
+                to="/PastaComponents" 
+                className="text-blue-500 hover:font-bold hover:underline" 
+              >
+                Clique aqui!
+              </Link>
             </section>
  
           </details>
@@ -115,7 +114,13 @@ export function PastaSRC () {
                 Esta é a pasta que armazena todas as páginas da nossa aplicação. Por ser muito conteúdo clique 
                 no link abaixo para mais informações.
               </p>
-              <button className="text-blue-500 hover:font-bold" onClick={navigatingTo}>Clique aqui!</button> 
+
+              <Link 
+                to="/PastaPages" 
+                className="text-blue-500 hover:font-bold hover:underline" 
+              >
+                Clique aqui!
+              </Link>
             </section>
  
           </details>
@@ -157,7 +162,13 @@ export function PastaSRC () {
                 Esta é a pasta que armazena todas interações com a biblioteca Redux. Por ser muito conteúdo clique 
                 no link abaixo para mais informações.
               </p>
-              <button className="text-blue-500 hover:font-bold" onClick={navigatingTo}>Clique aqui!</button> 
+
+              <Link 
+                to="/PastaStore" 
+                className="text-blue-500 hover:font-bold hover:underline" 
+              >
+                Clique aqui!
+              </Link>
             </section>
  
           </details>
