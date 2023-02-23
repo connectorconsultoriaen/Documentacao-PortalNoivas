@@ -23,23 +23,54 @@ export function PastaComponents () {
             <summary className='font-bold cursor-pointer'>Pasta Admin</summary>
             <section className='pl-4'>
               <p>
-                Nesta pasta temos a conexão com o back-end, junto com simulações de respostas do servidor para testes.
+                Essa pasta guarda os componentes que criam funcionalidades exclusivas de usuários administradores.
               </p>
               
               <details className='pt-2'>
-                <summary className='font-bold cursor-pointer'>Pasta mockups</summary>
-                <p className='pl-4'>
-                  Nesta pasta utilizimamos arquivos javascript para criar arquivos json que simulam uma resposta do banco de dados. 
-                  Como por exemplo retornar as informações dos anunciantes, imagens, cotações e etc. É uma pasta exclusiva para 
-                  testar funcionalidades caso a conexão com o banco não esteja disponivel durante o desenvolvimento.
-                </p>
+                <summary className='font-bold cursor-pointer'>Pasta Menu</summary>
+                <section className='pl-4'>
+                  <p>
+                    Essa pasta armazena os componentes que criam o menu dos usuários administradores. 
+                  </p>
+
+                  <details className='pt-2'>
+                    <summary className='font-bold cursor-pointer'>AdminSideBarMenu</summary>
+                    <p className='pl-4'>
+                      Componente que constrói um menu com as funcionalidades que o usuário administrador pode acessar. 
+                      Se utiliza do componente MenuItem para criar cada uma das rotas para as funcionalidades 
+                      disponíveis.
+                    </p>
+                  </details>
+
+                  <details className='pt-2'>
+                    <summary className='font-bold cursor-pointer'>MenuItem</summary>
+                    <p className='pl-4 text-red-600'>
+                      Componente que carrega uma página cuja rota é passada por props.
+                    </p>
+                  </details>
+                </section>
+
               </details>
 
               <details className='pt-2'>
-                <summary className='font-bold cursor-pointer'>index.js</summary>
-                <p className='pl-4'>
-                  Arquivo javascript que faz a conexão com o banco de dados utilizando a biblioteca axios.
-                </p>
+                <summary className='font-bold cursor-pointer'>Pasta Table</summary>
+                <section className='pl-4'>
+
+                  <details className='pt-2'>
+                    <summary className='font-bold cursor-pointer'>Filters</summary>
+                    <p className='pl-4'>
+                      Componente utilizado para filtrar conteúdo dentro da aplicação, como artigos por exemplo.
+                    </p>
+                  </details>
+
+                  <details className='pt-2'>
+                    <summary className='font-bold cursor-pointer'>Header</summary>
+                    <p className='pl-4 text-red-600'>
+                      Componente que cria o cabeçalho de um artigo.
+                    </p>
+                  </details>
+
+                </section>
               </details>
             </section>
           </details>
@@ -52,31 +83,59 @@ export function PastaComponents () {
             <summary className='font-bold cursor-pointer'>Pasta Form</summary>
             <section className='pl-4'>
               <p>
-                Nesta pasta temos hooks personalizados criados, a partir de hooks já existentes, expecificamente para 
-                atender as necessidades do projeto. 
+                Nesta pasta temos componentes que criam, cada um, uma parte de um formulário ou elementos relacionados. 
               </p>
               
               <details className='pt-2'>
-                <summary className='font-bold cursor-pointer'>useMenu.js</summary>
+                <summary className='font-bold cursor-pointer'>Checkbox</summary>
                 <p className='pl-4'>
-                  Esse hook foi criado para controlarmos se o Menu, verificando se ele está aberto ou fechado, para caso esteja aberto 
-                  possamos fecha-lo e vice-versa
+                  Cria um Checkbox.
                 </p>
               </details>
 
               <details className='pt-2'>
-                <summary className='font-bold cursor-pointer'>useModal.js</summary>
+                <summary className='font-bold cursor-pointer'>Condition</summary>
                 <p className='pl-4'>
-                  Arquivo javascript...
+                  Componente que renderiza o conteúdo dentro dele (podendo ser ou não outro componente), caso 
+                  a condição imposta seja válida.
                 </p>
               </details>
 
               <details className='pt-2'>
-                <summary className='font-bold cursor-pointer'>usePageSelection.js</summary>
+                <summary className='font-bold cursor-pointer'>CustomField</summary>
                 <p className='pl-4'>
-                  Arquivo javascript...
+                  Cria um Campo personalizável no formulário.
                 </p>
               </details>
+
+              <details className='pt-2'>
+                <summary className='font-bold cursor-pointer'>DatePicker</summary>
+                <p className='pl-4'>
+                  Componente que cria um input de data.
+                </p>
+              </details>
+
+              <details className='pt-2'>
+                <summary className='font-bold cursor-pointer'>Input</summary>
+                <p className='pl-4'>
+                  Cria um input padrão.
+                </p>
+              </details>     
+
+              <details className='pt-2'>
+                <summary className='font-bold cursor-pointer'>Radio</summary>
+                <p className='pl-4'>
+                  Componente que cria um input do tipo radio.
+                </p>
+              </details>                       
+
+              <details className='pt-2'>
+                <summary className='font-bold cursor-pointer'>Select</summary>
+                <p className='pl-4'>
+                  Componente que cria um input de seleção de múltiplas escolhas ou apenas uma dentre as escolhas disponíveis.
+                </p>
+              </details>  
+
             </section>
           </details>
 

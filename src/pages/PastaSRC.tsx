@@ -82,7 +82,7 @@ export function PastaSRC () {
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>useMenu.js</summary>
                 <p className='pl-4'>
-                  Esse hook foi criado para controlarmos se o Menu, verificando se ele está aberto ou fechado, para caso esteja aberto 
+                  Esse hook foi criado para controlarmos o Menu, verificando se ele está aberto ou fechado, para caso esteja aberto 
                   possamos fecha-lo e vice-versa
                 </p>
               </details>
