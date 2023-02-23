@@ -12,7 +12,7 @@ export function PastaStore () {
         
         <div className='py-7 w-full'>
 
-          <p>Todos as pastas e arquivos listados abaixo estão dentro da pasta SRC</p>
+          <p>Todos as pastas e arquivos listados abaixo estão dentro da pasta Store</p>
 
           <details 
             className='
