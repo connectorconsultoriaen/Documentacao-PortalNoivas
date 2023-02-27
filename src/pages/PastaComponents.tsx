@@ -49,28 +49,28 @@ export function PastaComponents () {
                     </p>
                   </details>
                 </section>
-
               </details>
 
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Pasta Table</summary>
                 <section className='pl-4'>
 
-                  <details className='pt-2'>
-                    <summary className='font-bold cursor-pointer'>Filters</summary>
-                    <p className='pl-4'>
-                      Componente utilizado para filtrar conteúdo dentro da aplicação, como artigos por exemplo.
-                    </p>
-                  </details>
-
-                  <details className='pt-2'>
-                    <summary className='font-bold cursor-pointer'>Header</summary>
-                    <p className='pl-4 text-red-600'>
-                      Componente que cria o cabeçalho de um artigo.
-                    </p>
-                  </details>
 
                 </section>
+              </details>
+
+              <details className='pt-2'>
+                <summary className='font-bold cursor-pointer'>Filters</summary>
+                <p className='pl-4'>
+                  Componente utilizado para filtrar conteúdo dentro da aplicação, como artigos por exemplo.
+                </p>
+              </details>
+
+              <details className='pt-2'>
+                <summary className='font-bold cursor-pointer'>Header</summary>
+                <p className='pl-4 text-red-600'>
+                  Componente que cria o cabeçalho de um artigo.
+                </p>
               </details>
             </section>
           </details>
