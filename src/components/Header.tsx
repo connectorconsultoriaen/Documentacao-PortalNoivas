@@ -22,31 +22,31 @@ export default function Header () {
         "
       >
         <Link 
-          to="/" 
+          to="/Documentacao-PortalNoivas/" 
           className="font-normal hover:font-semibold">
             Home
         </Link>
 
         <Link 
-          to="/PastaSRC" 
+          to="/Documentacao-PortalNoivas/PastaSRC" 
           className="font-normal hover:font-semibold">
             SRC
         </Link>
         
         <Link 
-          to="/PastaComponents" 
+          to="/Documentacao-PortalNoivas/PastaComponents" 
           className="font-normal hover:font-semibold">
             Components
         </Link>
         
         <Link 
-          to="/PastaPages" 
+          to="/Documentacao-PortalNoivas/PastaPages" 
           className="font-normal hover:font-semibold">
             Pages
         </Link>
         
         <Link 
-          to="/PastaStore" 
+          to="/Documentacao-PortalNoivas/PastaStore" 
           className="font-normal hover:font-semibold">
             Store
         </Link>

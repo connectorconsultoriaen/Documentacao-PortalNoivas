@@ -13,12 +13,12 @@ export default function MainRoutes() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Base/>}>
+          <Route path='/Documentacao-PortalNoivas/' element={<Base/>}>
             <Route index element={<Home/>} />
-            <Route path='/PastaSRC' element={<PastaSRC/>} />
-            <Route path='/PastaComponents' element={<PastaComponents/>} />
-            <Route path='/PastaPages' element={<PastaPages/>} />
-            <Route path='/PastaStore' element={<PastaStore/>} />
+            <Route path='/Documentacao-PortalNoivas/PastaSRC' element={<PastaSRC/>} />
+            <Route path='/Documentacao-PortalNoivas/PastaComponents' element={<PastaComponents/>} />
+            <Route path='/Documentacao-PortalNoivas/PastaPages' element={<PastaPages/>} />
+            <Route path='/Documentacao-PortalNoivas/PastaStore' element={<PastaStore/>} />
           </Route>
         </Routes> 
       </BrowserRouter>
