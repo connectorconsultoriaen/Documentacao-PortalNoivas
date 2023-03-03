@@ -150,7 +150,6 @@ export function PastaSRC () {
             </section>
           </details>
 
-
           <details 
             className='
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
@@ -173,7 +172,6 @@ export function PastaSRC () {
  
           </details>
 
-
           <details 
             className='
               mt-4 p-1 open:border-[1px] open:border-gold open:bg-zinc-100 transition-all duration-200 text-clip
@@ -181,17 +179,16 @@ export function PastaSRC () {
           > 
             <summary className='font-bold cursor-pointer'>Pasta Utils</summary>
             <section className='pl-4'>
-
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>index.js</summary>
                 <p className='pl-4'>
-                  Arquivo javascript...
+                  Arquivo javascript que guarda funções utilitarias que são usadas em outras partes do projeto, 
+                  com a finalidade de evitar repetição de código.
                 </p>
               </details>
 
             </section>
           </details>
-
 
           <details 
             className='
@@ -203,7 +200,6 @@ export function PastaSRC () {
               <p>Arquivo de estilização global para toda á aplicação</p>
             </section>
           </details>          
-
 
           <details 
             className='

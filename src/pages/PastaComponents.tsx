@@ -44,8 +44,8 @@ export function PastaComponents () {
 
                   <details className='pt-2'>
                     <summary className='font-bold cursor-pointer'>MenuItem</summary>
-                    <p className='pl-4 text-red-600'>
-                      Componente que carrega uma página cuja rota é passada por props.
+                    <p className='pl-4'>
+                      Componente criado para evitar repetição de código e para estilização.
                     </p>
                   </details>
                 </section>
@@ -55,6 +55,28 @@ export function PastaComponents () {
                 <summary className='font-bold cursor-pointer'>Pasta Table</summary>
                 <section className='pl-4'>
 
+                <details className='pt-2'>
+                    <summary className='font-bold cursor-pointer'>ItemsPerPage</summary>
+                    <p className='pl-4'>
+                      Componente códificado para melhor experiência do usúario e controle da paginação, ele mostra 
+                      os items por página e quantas páginas existem.
+                    </p>
+                  </details>
+
+                  <details className='pt-2'>
+                    <summary className='font-bold cursor-pointer'>Pagination</summary>
+                    <p className='pl-4'>
+                      Esse componente implementa a função de paginação na aplicação (sem uso de biblioteca).
+                    </p>
+                  </details>
+
+                  <details className='pt-2'>
+                    <summary className='font-bold cursor-pointer'>Table</summary>
+                    <p className='pl-4'>
+                      Esse componente renderiza uma Tabela genérica que recebe como parâmetro os campos, os dados e as ações 
+                      do registro.
+                    </p>
+                  </details>                                                      
 
                 </section>
               </details>
@@ -68,8 +90,9 @@ export function PastaComponents () {
 
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Header</summary>
-                <p className='pl-4 text-red-600'>
-                  Componente que cria o cabeçalho de um artigo.
+                <p className='pl-4'>
+                  Componente que renderiza um título e subtitulo para descrever a funcionalidade oferecida pela 
+                  página a qual for inserido.
                 </p>
               </details>
             </section>
@@ -83,13 +106,14 @@ export function PastaComponents () {
             <summary className='font-bold cursor-pointer'>Pasta Form</summary>
             <section className='pl-4'>
               <p>
-                Nesta pasta temos componentes que criam, cada um, uma parte de um formulário ou elementos relacionados. 
+                Nesta pasta temos componentes que renderizam, um elemento de formulário utilizando a biblioteca "react-final-form" 
+                em sua maioria. Porém temos a utilização de outras bibliotecas também. 
               </p>
               
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Checkbox</summary>
                 <p className='pl-4'>
-                  Cria um Checkbox.
+                  Componente que renderiza um Checkbox.
                 </p>
               </details>
 
@@ -104,35 +128,37 @@ export function PastaComponents () {
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>CustomField</summary>
                 <p className='pl-4'>
-                  Cria um Campo personalizável no formulário.
+                  Códificado para customizar o comportamento do componente "Field" da biblioteca "react-final-form" para 
+                  termos controle do novo comportamento "OnChange".
                 </p>
               </details>
 
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>DatePicker</summary>
                 <p className='pl-4'>
-                  Componente que cria um input de data.
+                  Componente que utiliza a biblioteca "react-datepicker" e "date-fns" para renderizar um input que permite o 
+                  usuário abrir um calendário no qual possa escolher uma data específica com ano, mês e dia.
                 </p>
               </details>
 
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Input</summary>
                 <p className='pl-4'>
-                  Cria um input padrão.
+                  Componente que renderiza um input padrão.
                 </p>
               </details>     
 
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Radio</summary>
                 <p className='pl-4'>
-                  Componente que cria um input do tipo radio.
+                  Componente que renderiza um input do tipo radio.
                 </p>
               </details>                       
 
               <details className='pt-2'>
                 <summary className='font-bold cursor-pointer'>Select</summary>
                 <p className='pl-4'>
-                  Componente que cria um input de seleção de múltiplas escolhas ou apenas uma dentre as escolhas disponíveis.
+                  Componente que renderiza um input de seleção de múltiplas escolhas, ou apenas uma, dentre as escolhas disponíveis.
                 </p>
               </details>  
 
@@ -147,8 +173,8 @@ export function PastaComponents () {
             <summary className='font-bold cursor-pointer'>AnuncioCard</summary>
             <section className='pl-4'>
               <p>
-              Um componente que cria um anúncio na aplicação. Esse anúncio é criado por um terceiro que tem interrese 
-              de anunciar o seu negócio no site Portal Noiva.
+              Um componente que renderiza um anúncio na aplicação. Esse anúncio é criado por usuário anunciante e aprovado 
+              pelo administrador do site Portal Noiva.
               </p>
             </section>
           </details>
@@ -161,8 +187,8 @@ export function PastaComponents () {
             <summary className='font-bold cursor-pointer'>ArticleCard</summary>
             <section className='pl-4'>
               <p>
-                Um componente que cria um artigo dentro da aplicação. Esse artigo criado possui a data de publicação e 
-                controla o número de visualizações.
+                Um componente que renderiza um artigo dentro da aplicação. Esse artigo possui a data de publicação e 
+                mostra o número de visualizações.
               </p>
             </section>
           </details>
@@ -175,8 +201,8 @@ export function PastaComponents () {
             <summary className='font-bold cursor-pointer'>BannerCard</summary>
             <section className='pl-4'>
               <p>
-              Um componente que cria um Banner na aplicação. Esse banner é criado por um terceiro que 
-                tem interrese de anunciar o seu negocio no site Portal Noiva.
+                Um componente que renderiza um Banner na aplicação. Esse banner é criado por um terceiro que 
+                tem interesse de anunciar o seu negócio no site Portal Noiva.
               </p>
             </section>
           </details>              
@@ -189,7 +215,7 @@ export function PastaComponents () {
             <summary className='font-bold cursor-pointer'>FeaturedCategoryCard</summary>
             <section className='pl-4'>
               <p>
-                Um componente que...
+                Um componente que renderiza um card com as informação da categoria que lhe for passada.
               </p>
             </section>
           </details>
@@ -244,7 +270,7 @@ export function PastaComponents () {
             <summary className='font-bold cursor-pointer'>PublicidadeBanner</summary>
             <section className='pl-4'>
               <p>
-                Esse componente é responsavel por mostrar na tela os banner encontrados pelo
+                Esse componente é responsavel por mostrar na tela as informações do banner que lhe foi passado pelo 
                 componente Publicidade.jsx.
               </p>
             </section>
