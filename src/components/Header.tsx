@@ -12,7 +12,7 @@ export default function Header () {
     >
 
       <div className="p-3 ml-4">
-        <img src="/logo.png" alt="Logo do Portal Noivas" className="max-h-14 max-sm:max-h-12"/>
+        <img src="/Documentacao-PortalNoivas/logo.png" alt="Logo do Portal Noivas" className="max-h-14 max-sm:max-h-12"/>
       </div>
 
       <div 
