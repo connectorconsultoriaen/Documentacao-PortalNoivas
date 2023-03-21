@@ -9,13 +9,15 @@ export default function Header () {
   const handleMenu = () => {
     const web = "invisible md:visible flex flex-row justify-evenly w-3/5 py-2 text-white font-extralight font-Poppins"
     const mobile = `
-      absolute w-full h-full flex flex-col overflow-x-hidden overflow-y-hidden justify-evenly items-center bg-gradient-to-r from-goldDark to-gold 
+      fixed w-full h-full flex flex-col overflow-x-hidden overflow-y-hidden justify-evenly items-center bg-gradient-to-r from-goldDark to-gold 
       md:invisible top-0 text-white text-3xl font-bold underline transition-all
     `
 
     if (window.screen.width < 768) {
-      return web === visibility ? setVisibility(mobile) : setVisibility(web) 
+      return web === visibility ? setVisibility(mobile) : setVisibility(web);
     }
+
+    return null;
   }
 
   return (

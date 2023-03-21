@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { DetailsLevel1, DetailsLevel2 } from '../components/DetailsElements';
 
 export function PastaSRC () {
