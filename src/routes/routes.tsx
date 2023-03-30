@@ -6,6 +6,7 @@ import { PastaSRC } from '../pages/PastaSRC';
 import { PastaComponents } from '../pages/PastaComponents';
 import { PastaStore } from '../pages/PastaStore';
 import { PastaPages } from '../pages/PastaPages';
+import { PastaAdmin } from "../pages/PastaAdmin";
 
 
 export default function MainRoutes() {
@@ -19,6 +20,7 @@ export default function MainRoutes() {
             <Route path='/Documentacao-PortalNoivas/PastaComponents' element={<PastaComponents/>} />
             <Route path='/Documentacao-PortalNoivas/PastaPages' element={<PastaPages/>} />
             <Route path='/Documentacao-PortalNoivas/PastaStore' element={<PastaStore/>} />
+            <Route path='/Documentacao-PortalNoivas/PastaAdmin' element={<PastaAdmin/>} />
           </Route>
         </Routes> 
       </BrowserRouter>
