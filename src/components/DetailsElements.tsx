@@ -35,7 +35,7 @@ export function DetailsLevel1({title, text, link, children, importations}: Setti
             <p className="text-xs md:text-base mt-2">
               Bibliotecas, componentes e/ou arquivos importados que foram utilizados:
             </p>
-            <ul className="pl-4">
+            <ul className="pl-4 overflow-auto">
               {
                 importations.map( (item, i) => <li className="list-disc text-xs md:text-sm" key={item + i}>{item}</li>)
               }
@@ -74,7 +74,7 @@ export function DetailsLevel2({title, text, link, children, importations}: Setti
             <p className="text-xs md:text-base mt-2">
               Bibliotecas, componentes e/ou arquivos importados que foram utilizados:
             </p>
-            <ul className="pl-4">
+            <ul className="pl-4 overflow-auto">
               {
                 importations.map( (item, i) => <li className="list-disc text-xs md:text-sm" key={item + i}>{item}</li>)
               }
@@ -113,7 +113,7 @@ export function DetailsLevel3({title, text, link, children, importations}: Setti
           <p className="text-xs md:text-base mt-2">
             Bibliotecas, componentes e/ou arquivos importados que foram utilizados:
           </p>
-          <ul className="pl-4">
+          <ul className="pl-4 overflow-auto">
             {
               importations.map( (item, i) => <li className="list-disc text-xs md:text-sm" key={item + i}>{item}</li>)
             }
